@@ -1,0 +1,133 @@
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+.carousel{position:relative}
+
+.carousel-inner{position:relative;width:100%;overflow:hidden; height: 144px;}
+
+.carousel-inner>.item{position:relative;display:none;-webkit-transition:.6s ease-in-out left;transition:.6s ease-in-out left}
+
+.carousel-inner>.item>img,.carousel-inner>.item>a>img{display:block;height:auto;max-width:100%;line-height:1}
+.carousel-inner>.active,.carousel-inner>.next,.carousel-inner>.prev{display:block}
+.carousel-inner>.active{left:0}
+.carousel-inner>.next,.carousel-inner>.prev{position:absolute;top:0;width:100%}
+.carousel-inner>.next{left:100%}
+.carousel-inner>.prev{left:-100%}.carousel-inner>.next.left,.carousel-inner>.prev.right{left:0}
+
+.carousel-inner>.active.left{left:-100%}.carousel-inner>.active.right{left:100%}
+
+
+.carousel-banner {
+	
+width: 1044px; height: 169px; position: relative; overflow: hidden;
+}
+
+#bannerCarousel {
+width: 1044px; height: 169px; position: relative; overflow: hidden;	
+}
+
+
+/*
+#FullBoxslideshow {
+position: relative;
+float: right;
+overflow: auto;
+width: 446px;
+height: 332px;
+margin-left: 5px;
+margin-top: 8px;
+}
+
+*/
+
+
+.slideshowFullBox {
+position: relative;
+float: right;
+overflow: auto;
+width: 446px;
+height: 332px;
+margin-left: 5px;
+margin-top: 8px;
+
+}
+
+
+
+
+.carousel-caption{position:absolute;z-index:10;text-align:center;}
+
+.carousel-caption .btn{text-shadow:none}
+
+@media screen and (min-width:768px){.carousel-control .glyphicons-chevron-left,.carousel-control .glyphicons-chevron-right,.carousel-control .icon-prev,.carousel-control .icon-next{width:30px;height:30px;margin-top:-15px;margin-left:-15px;font-size:30px}
+
+
+.carousel-indicators{bottom:20px}}.clearfix:before,.clearfix:after{display:table;content:" "}.clearfix:after{clear:both}.center-block{display:block;margin-right:auto;margin-left:auto}.pull-right{float:right!important}.pull-left{float:left!important}.hide{display:none!important}.show{display:block!important}.invisible{visibility:hidden}.text-hide{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}.hidden{display:none!important;visibility:hidden!important}.affix{position:fixed}
+
+
+ 
+/* Declare heights because of positioning of img element */
+.carousel-caption {
+  z-index: 10;
+}
+
+.carousel-caption {
+    position: absolute;
+
+    }
+
+.carousel.fade {
+  opacity: 1;
+}
+.carousel.fade .item {
+  -moz-transition: opacity ease-in-out .9s;
+  -o-transition: opacity ease-in-out .9s;
+  -webkit-transition: opacity ease-in-out .9s;
+  transition: opacity ease-in-out .9s;
+  left: 0 !important;
+  opacity: 0;
+  top:0;
+  position:absolute;
+  width: 100%;
+  display:block !important;
+  z-index:1;
+}
+.carousel.fade .item:first-child {
+  top:auto;
+  position:relative;
+}
+.carousel.fade .item.active {
+  opacity: 1;
+  -moz-transition: opacity ease-in-out .9s;
+  -o-transition: opacity ease-in-out .9s;
+  -webkit-transition: opacity ease-in-out .9s;
+  transition: opacity ease-in-out .9s;
+  z-index:2;
+}
+
+
+
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 341px;
+  background-color: #fafbff;
+}
+
+
+
+
+
+.carousel-inner > .bannerSlide > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 169px;
+}
+
+
+
+
+
+

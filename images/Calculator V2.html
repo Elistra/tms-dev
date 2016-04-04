@@ -1,0 +1,335 @@
+
+
+    
+<style type="text/css"> /* Styles needed by SpreadsheetConverter */
+*.ee100 { background : #D9D9D9;  border-bottom :0.75pt  hairline  windowtext;  border-left : 1.00pt  solid  windowtext;  border-right :0.75pt  hairline  windowtext;  border-top : 1.00pt  solid  windowtext;  color : black;  font-family : Calibri  ,  sans-serif;  font-size : 11.00pt;  font-style : normal;  font-weight : 400;  padding-left : 1px;  padding-right : 1px;  padding-top : 1px;  text-align : right;  vertical-align : middle } *.ee103 { border-bottom :0.75pt  hairline  windowtext;  border-right : 1.00pt  solid  black;  border-top : 1.00pt  solid  windowtext;  color : black;  font-family : Calibri  ,  sans-serif;  font-size : 11.00pt;  font-style : normal;  font-weight : 400;  padding-left : 0px;  padding-right : 1px;  padding-top : 0px;  text-align : center;  vertical-align : bottom } *.ee105 { color : black;  font-family : Calibri  ,  sans-serif;  font-size : 11.00pt;  font-style : normal;  font-weight : 400;  text-align : center;  vertical-align : bottom } *.ee109 { color : white;  font-family : Calibri  ,  sans-serif;  font-size : 11.00pt;  font-style : normal;  font-weight : 400;  padding-left : 1px;  padding-right : 1px;  padding-top : 1px;  text-align : left;  vertical-align : bottom } *.ee112 { background : #D9D9D9;  border-bottom :0.75pt  hairline  windowtext;  border-left : 1.00pt  solid  windowtext;  border-right :0.75pt  hairline  windowtext;  color : black;  font-family : Calibri  ,  sans-serif;  font-size : 11.00pt;  font-style : normal;  font-weight : 400;  padding-left : 1px;  padding-right : 1px;  padding-top : 1px;  text-align : right;  vertical-align : middle } *.ee113 { border-bottom :0.75pt  hairline  windowtext;  border-right : 1.00pt  solid  black;  border-top :0.75pt  hairline  windowtext;  color : black;  font-family : Calibri  ,  sans-serif;  font-size : 11.00pt;  font-style : normal;  font-weight : 400;  padding-left : 0px;  padding-right : 1px;  padding-top : 0px;  text-align : center;  vertical-align : bottom } *.ee114 { color : white;  font-family : Calibri  ,  sans-serif;  font-size : 11.00pt;  font-style : normal;  font-weight : 400;  padding-left : 0px;  padding-right : 1px;  padding-top : 0px;  text-align : right;  vertical-align : bottom } *.ee116 { color : white;  font-family : Calibri  ,  sans-serif;  font-size : 11.00pt;  font-style : normal;  font-weight : 400;  text-align : right;  vertical-align : bottom } *.ee117 { background : #D9D9D9;  border-bottom :0.75pt  hairline  windowtext;  border-right : 1.00pt  solid  black;  border-top :0.75pt  hairline  windowtext;  color : black;  font-family : Calibri  ,  sans-serif;  font-size : 11.00pt;  font-style : normal;  font-weight : 400;  padding-left : 0px;  padding-right : 1px;  padding-top : 0px;  text-align : center;  vertical-align : bottom } *.ee118 { background : #D9D9D9;  color : black;  font-family : Calibri  ,  sans-serif;  font-size : 11.00pt;  font-style : normal;  font-weight : 400;  text-align : center;  vertical-align : bottom } *.ee119 { background : #C4D79B;  border-bottom :0.75pt  hairline  windowtext;  border-left : 1.00pt  solid  windowtext;  border-right :0.75pt  hairline  windowtext;  color : black;  font-family : Calibri  ,  sans-serif;  font-size : 11.00pt;  font-style : normal;  font-weight : 400;  padding-left : 1px;  padding-right : 1px;  padding-top : 1px;  text-align : right;  vertical-align : middle } *.ee121 { background : #C4D79B;  border-bottom :0.75pt  hairline  windowtext;  border-right : 1.00pt  solid  black;  border-top :0.75pt  hairline  windowtext;  color : black;  font-family : Calibri  ,  sans-serif;  font-size : 11.00pt;  font-style : normal;  font-weight : 700;  padding-left : 0px;  padding-right : 1px;  padding-top : 0px;  text-align : center;  vertical-align : bottom } *.ee123 { background : #C4D79B;  color : black;  font-family : Calibri  ,  sans-serif;  font-size : 11.00pt;  font-style : normal;  font-weight : 700;  text-align : center;  vertical-align : bottom } *.ee124 { background : #C4D79B;  border-bottom : 1.00pt  solid  windowtext;  border-left : 1.00pt  solid  windowtext;  border-right :0.75pt  hairline  windowtext;  color : black;  font-family : Calibri  ,  sans-serif;  font-size : 11.00pt;  font-style : normal;  font-weight : 400;  padding-left : 1px;  padding-right : 1px;  padding-top : 1px;  text-align : right;  vertical-align : middle } *.ee125 { background : #C4D79B;  border-bottom : 1.00pt  solid  windowtext;  border-right : 1.00pt  solid  black;  border-top :0.75pt  hairline  windowtext;  color : black;  font-family : Calibri  ,  sans-serif;  font-size : 11.00pt;  font-style : normal;  font-weight : 700;  padding-left : 0px;  padding-right : 1px;  padding-top : 0px;  text-align : center;  vertical-align : bottom } *.ee126 { color : black;  font-family : Calibri  ,  sans-serif;  font-size : 11.00pt;  font-style : normal;  font-weight : 400;  padding-left : 1px;  padding-right : 1px;  padding-top : 1px;  text-align : left;  vertical-align : bottom }
+
+textarea {  overflow: auto; }
+</style>
+    
+<style type='text/css'> object {border: 1px solid rgb(113, 114, 115);} </style>
+<script type="text/javascript" src="support/jquery.js"></script>
+<script type="text/javascript" src="YUI/yahoo-min.js"></script>
+<script type="text/javascript" src="YUI/yahoo-dom-event.js"></script>
+<script>		
+	                            jQuery(document).ready(function(){
+                                  jQuery('#loading').hide();});</script>
+<link rel="stylesheet" type="text/css" href="YUI/fonts-min.css" />                       
+<script type="text/javascript" src="YUI/cookie-beta-min.js"></script>
+<script type="text/javascript" src="YUI/cookie-min.js"></script>
+<link rel="stylesheet" type="text/css" href="YUI/tabview.css" />
+<script type="text/javascript" src="YUI/element-beta-min.js"></script>
+<script type="text/javascript" src="YUI/tabview-min.js"></script>
+<link rel="stylesheet" type="text/css" href="YUI/container.css" />
+<script type="text/javascript" src="YUI/container-min.js"></script> 
+
+<style type='text/css' media='print'>
+.mystyles {display:none;}.printclass {display:block;}*.ee100 {border:0px solid #000000;}*.ee103 {border:0px solid #000000;}*.ee105 {border:0px solid #000000;}*.ee106 {border:0px solid #000000;}*.ee108 {border:0px solid #000000;}*.ee109 {border:0px solid #000000;}*.ee110 {border:0px solid #000000;}*.ee111 {border:0px solid #000000;}*.ee113 {border:0px solid #000000;}*.ee117 {border:0px solid #000000;}*.ee118 {border:0px solid #000000;}*.ee120 {border:0px solid #000000;}*.ee121 {border:0px solid #000000;}*.ee122 {border:0px solid #000000;}.eebuttonbar_top ,.eebuttonbar_bottom, .eetabs,.wizardbuttons,.buttonPage,.buttonPage,.buttonFinish,.buttonCancel,.yui-content .highlighted, .yui-content .dimmed{display:none!important;}div {border:none!important;}.msg_body{background-color:White !important;}.accordion h3 {display:none!important;}.accordion p {border:none;}
+</style>
+<link rel='stylesheet' type='text/css' href='support/ssc_styles.css' />
+<link rel='stylesheet' type='text/css' href='' media="print" id="default" />
+<link rel='stylesheet' type='text/css' href='support/wizardstyle.css' />
+<style type="text/css" media="print">.button,.dactive,.button,.dactive{ display:none ;}</style>
+<script>
+var isSheet0FirstDisplay = true;
+</script>
+<script>var SheetCollection = new Array();
+SheetCollection[0] = new Array();
+</script>
+<!-- SpreadsheetConverter Header end -->
+</head>
+
+<img id='loading' style='z-index:103;position:absolute;top:50%;left:50%;' src='support/loading.gif'/>
+<div id="lightalert" class="white_content_alert" style="padding:10px 10px 10px 10px">
+            <table width="100%">
+            <tr style="height:50px;">
+                
+        </table>
+        </div>
+        <div id="fadealert" class="black_overlay"></div>
+
+<form id='formc' name='formc' method='post' action='' target='_top'>
+<!--hidden fields for target, spreadsheet,cleint.-->
+            <input type='hidden' id='xl_spreadsheet' name='xl_spreadsheet' value='Calculator V2.xlsx' />
+            <input type='hidden' id='xl_client' name='xl_client' value='x6.10.5544.0' />
+
+<input type="hidden" id="currentpanel" />
+<input type="hidden" id="panelidz" />
+<!--hidden fields for success,failure and cancel urls.-->
+<div id='demo1' style="background-color:#FFFFFF">
+<div class='mystyles'>
+<ul class='yui-nav'></ul>
+</div>
+<div class='yui-content' style="padding:0!important; margin:0!important">
+
+<div style="page-break-after:auto;display:block;padding:5px;background-color:#FFFFFF" class='printclass'>
+<table cellspacing='0' cellpadding='0' width='677' style='border-collapse:collapse' onkeydown='javascript:navigate(event);'>
+<tr style="height:1px;">
+<td width='214'></td>
+<td width='77'></td>
+<td width='58'></td>
+<td width='64'></td>
+<td width='104'></td>
+<td width='74'></td>
+<td width='86'></td>
+</tr>
+<tr style='height:14pt'>
+<td class='ee100' sheetid="1" rowid="1" colid="1">
+Batch
+  Qty :
+
+
+</td>
+<td class='ee103' sheetid="1" rowid="1" colid="2" colspan='2'>
+<input onchange=" this.value=eedisplayFloatND(eeparseFloat(this.value),0);recalc_onclick('xlew_1_1_2') ;setValueofBtn();" value='0' type='text' tabindex='1' style=' width:100% ;padding-right:1px;' name='xlew_1_1_2' id='xlew_1_1_2' class='ee105' downkey='xlew_1_2_2' onKeyDown="onEnterPress('xlew_1_1_2');" />
+
+
+</td>
+<td class='ee109' sheetid="1" rowid="1" colid="4">
+total
+
+
+</td>
+<td class='ee109' sheetid="1" rowid="1" colid="5">
+per
+
+
+</td>
+<td class='ee109' sheetid="1" rowid="1" colid="6"><div style="height:14pt;overflow:hidden"></div></td>
+<td class='ee109' sheetid="1" rowid="1" colid="7"><div style="height:14pt;overflow:hidden"></div></td>
+</tr>
+<tr style='height:14pt'>
+<td class='ee112' sheetid="1" rowid="2" colid="1">
+Bom Lines :
+
+
+</td>
+<td class='ee113' sheetid="1" rowid="2" colid="2" colspan='2'>
+<input onchange=" this.value=eedisplayFloatND(eeparseFloat(this.value),0);recalc_onclick('xlew_1_2_2') ;setValueofBtn();" value='0' type='text' tabindex='2' style=' width:100% ;padding-right:1px;' name='xlew_1_2_2' id='xlew_1_2_2' class='ee105' downkey='xlew_1_3_2' upkey='xlew_1_1_2' onKeyDown="onEnterPress('xlew_1_2_2');" />
+
+
+</td>
+<td class='ee114' sheetid="1" rowid="2" colid="4">
+<input readonly='readonly' value='0' type='text' tabindex='-1' style='overflow:hidden; border:0px solid #000000; width:100% ;padding-right:1px;' name='xlew_1_2_4' id='xlew_1_2_4' class='ee116' />
+
+
+</td>
+<td class='ee114' sheetid="1" rowid="2" colid="5">
+<input readonly='readonly' value='0' type='text' tabindex='-1' style='overflow:hidden; border:0px solid #000000; width:100% ;padding-right:1px;' name='xlew_1_2_5' id='xlew_1_2_5' class='ee116' />
+
+
+</td>
+<td class='ee109' sheetid="1" rowid="2" colid="6"><div style="height:14pt;overflow:hidden"></div></td>
+<td class='ee109' sheetid="1" rowid="2" colid="7"><div style="height:14pt;overflow:hidden"></div></td>
+</tr>
+<tr style='height:14pt'>
+<td class='ee112' sheetid="1" rowid="3" colid="1">
+SMT Placements
+  Total :
+
+
+</td>
+<td class='ee113' sheetid="1" rowid="3" colid="2" colspan='2'>
+<input onchange=" this.value=eedisplayFloatND(eeparseFloat(this.value),0);recalc_onclick('xlew_1_3_2') ;setValueofBtn();" value='0' type='text' tabindex='3' style=' width:100% ;padding-right:1px;' name='xlew_1_3_2' id='xlew_1_3_2' class='ee105' upkey='xlew_1_2_2' onKeyDown="onEnterPress('xlew_1_3_2');" />
+
+
+</td>
+<td class='ee114' sheetid="1" rowid="3" colid="4">
+<input readonly='readonly' value='0' type='text' tabindex='-1' style='overflow:hidden; border:0px solid #000000; width:100% ;padding-right:1px;' name='xlew_1_3_4' id='xlew_1_3_4' class='ee116' />
+
+
+</td>
+<td class='ee109' sheetid="1" rowid="3" colid="5"><div style="height:14pt;overflow:hidden"></div></td>
+<td class='ee109' sheetid="1" rowid="3" colid="6"><div style="height:14pt;overflow:hidden"></div></td>
+<td class='ee109' sheetid="1" rowid="3" colid="7"><div style="height:14pt;overflow:hidden"></div></td>
+</tr>
+<tr style='height:14pt'>
+<td class='ee112' sheetid="1" rowid="4" colid="1">
+SMT Assembly
+  Sides 1 or 2 :
+
+
+</td>
+<td class='ee113' sheetid="1" rowid="4" colid="2" colspan='2'>
+<fieldset id="xlew_1_4_2ssc" style="border:0;padding:0;"><select name='xlew_1_4_2' id='xlew_1_4_2' class='ee105' style=' width:100% ' tabindex='4' onchange="recalc_onclick('xlew_1_4_2')" size='1'><option  value='0'>0</option><option  value='1' selected='selected'>1</option><option  value='2'>2</option></select></fieldset>
+
+</td>
+<td class='ee109' sheetid="1" rowid="4" colid="4"><div style="height:14pt;overflow:hidden"></div></td>
+<td class='ee109' sheetid="1" rowid="4" colid="5"><div style="height:14pt;overflow:hidden"></div></td>
+<td class='ee109' sheetid="1" rowid="4" colid="6"><div style="height:14pt;overflow:hidden"></div></td>
+<td class='ee109' sheetid="1" rowid="4" colid="7"><div style="height:14pt;overflow:hidden"></div></td>
+</tr>
+<tr style='height:14pt'>
+<td class='ee112' sheetid="1" rowid="5" colid="1">
+PTH Pins :
+
+
+</td>
+<td class='ee113' sheetid="1" rowid="5" colid="2" colspan='2'>
+<input onchange=" this.value=eedisplayFloatND(eeparseFloat(this.value),0);recalc_onclick('xlew_1_5_2') ;setValueofBtn();" value='0' type='text' tabindex='5' style=' width:100% ;padding-right:1px;' name='xlew_1_5_2' id='xlew_1_5_2' class='ee105' downkey='xlew_1_6_2' onKeyDown="onEnterPress('xlew_1_5_2');" />
+
+
+</td>
+<td class='ee114' sheetid="1" rowid="5" colid="4">
+<input readonly='readonly' value='0' type='text' tabindex='-1' style='overflow:hidden; border:0px solid #000000; width:100% ;padding-right:1px;' name='xlew_1_5_4' id='xlew_1_5_4' class='ee116' />
+
+
+</td>
+<td class='ee109' sheetid="1" rowid="5" colid="5"><div style="height:14pt;overflow:hidden"></div></td>
+<td class='ee109' sheetid="1" rowid="5" colid="6"><div style="height:14pt;overflow:hidden"></div></td>
+<td class='ee109' sheetid="1" rowid="5" colid="7"><div style="height:14pt;overflow:hidden"></div></td>
+</tr>
+<tr style='height:14pt'>
+<td class='ee112' sheetid="1" rowid="6" colid="1">
+PTH Locations
+  :
+
+
+</td>
+<td class='ee113' sheetid="1" rowid="6" colid="2" colspan='2'>
+<input onchange=" this.value=eedisplayFloatND(eeparseFloat(this.value),0);recalc_onclick('xlew_1_6_2') ;setValueofBtn();" value='0' type='text' tabindex='6' style=' width:100% ;padding-right:1px;' name='xlew_1_6_2' id='xlew_1_6_2' class='ee105' upkey='xlew_1_5_2' onKeyDown="onEnterPress('xlew_1_6_2');" />
+
+
+</td>
+<td class='ee114' sheetid="1" rowid="6" colid="4">
+<input readonly='readonly' value='0' type='text' tabindex='-1' style='overflow:hidden; border:0px solid #000000; width:100% ;padding-right:1px;' name='xlew_1_6_4' id='xlew_1_6_4' class='ee116' />
+
+
+</td>
+<td class='ee109' sheetid="1" rowid="6" colid="5"><div style="height:14pt;overflow:hidden"></div></td>
+<td class='ee109' sheetid="1" rowid="6" colid="6"><div style="height:14pt;overflow:hidden"></div></td>
+<td class='ee109' sheetid="1" rowid="6" colid="7"><div style="height:14pt;overflow:hidden"></div></td>
+</tr>
+<tr style='height:14pt'>
+<td class='ee112' sheetid="1" rowid="7" colid="1">
+Tooling &amp;
+  Set Up* :
+
+
+</td>
+<td class='ee117' sheetid="1" rowid="7" colid="2" colspan='2'>
+<input readonly='readonly' value='-' type='text' tabindex='-1' style='overflow:hidden; border:0px solid #000000; width:100% ;padding-right:1px;' name='xlew_1_7_2' id='xlew_1_7_2' class='ee118' />
+
+
+</td>
+<td class='ee109' sheetid="1" rowid="7" colid="4"><div style="height:14pt;overflow:hidden"></div></td>
+<td class='ee109' sheetid="1" rowid="7" colid="5"><div style="height:14pt;overflow:hidden"></div></td>
+<td class='ee109' sheetid="1" rowid="7" colid="6"><div style="height:14pt;overflow:hidden"></div></td>
+<td class='ee109' sheetid="1" rowid="7" colid="7"><div style="height:14pt;overflow:hidden"></div></td>
+</tr>
+<tr style='height:14pt'>
+<td class='ee119' sheetid="1" rowid="8" colid="1">
+Total inc Wave
+  solder :
+
+
+</td>
+<td class='ee121' sheetid="1" rowid="8" colid="2" colspan='2'>
+<input readonly='readonly' value='-' type='text' tabindex='-1' style='overflow:hidden; border:0px solid #000000; width:100% ;padding-right:1px;' name='xlew_1_8_2' id='xlew_1_8_2' class='ee123' />
+
+
+</td>
+<td class='ee109' sheetid="1" rowid="8" colid="4"><div style="height:14pt;overflow:hidden"></div></td>
+<td class='ee114' sheetid="1" rowid="8" colid="5">
+<input readonly='readonly' value='0' type='text' tabindex='-1' style='overflow:hidden; border:0px solid #000000; width:100% ;padding-right:1px;' name='xlew_1_8_5' id='xlew_1_8_5' class='ee116' />
+
+
+</td>
+<td class='ee114' sheetid="1" rowid="8" colid="6">
+<input readonly='readonly' value='0' type='text' tabindex='-1' style='overflow:hidden; border:0px solid #000000; width:100% ;padding-right:1px;' name='xlew_1_8_6' id='xlew_1_8_6' class='ee116' />
+
+
+</td>
+<td class='ee114' sheetid="1" rowid="8" colid="7">
+<input readonly='readonly' value='-' type='text' tabindex='-1' style='overflow:hidden; border:0px solid #000000; width:100% ;padding-right:1px;' name='xlew_1_8_7' id='xlew_1_8_7' class='ee116' />
+
+
+</td>
+</tr>
+<tr style='height:15pt'>
+<td class='ee124' sheetid="1" rowid="9" colid="1">
+Total inc Hand
+  solder :
+
+
+</td>
+<td class='ee125' sheetid="1" rowid="9" colid="2" colspan='2'>
+<input readonly='readonly' value='-' type='text' tabindex='-1' style='overflow:hidden; border:0px solid #000000; width:100% ;padding-right:1px;' name='xlew_1_9_2' id='xlew_1_9_2' class='ee123' />
+
+
+</td>
+<td class='ee109' sheetid="1" rowid="9" colid="4">&nbsp;</td>
+<td class='ee114' sheetid="1" rowid="9" colid="5">
+<input readonly='readonly' value='0' type='text' tabindex='-1' style='overflow:hidden; border:0px solid #000000; width:100% ;padding-right:1px;' name='xlew_1_9_5' id='xlew_1_9_5' class='ee116' />
+
+
+</td>
+<td class='ee114' sheetid="1" rowid="9" colid="6">
+<input readonly='readonly' value='0' type='text' tabindex='-1' style='overflow:hidden; border:0px solid #000000; width:100% ;padding-right:1px;' name='xlew_1_9_6' id='xlew_1_9_6' class='ee116' />
+
+
+</td>
+<td class='ee114' sheetid="1" rowid="9" colid="7">
+<input readonly='readonly' value='-' type='text' tabindex='-1' style='overflow:hidden; border:0px solid #000000; width:100% ;padding-right:1px;' name='xlew_1_9_7' id='xlew_1_9_7' class='ee116' />
+
+
+</td>
+</tr>
+<tr style='height:14pt'>
+<td class='ee126' sheetid="1" rowid="10" colid="1">
+* Free on orders over £1000
+
+
+</td>
+<td class='ee126' sheetid="1" rowid="10" colid="2"><div style="height:14pt;overflow:hidden"></div></td>
+<td class='ee126' sheetid="1" rowid="10" colid="3"><div style="height:14pt;overflow:hidden"></div></td>
+<td class='ee126' sheetid="1" rowid="10" colid="4"><div style="height:14pt;overflow:hidden"></div></td>
+<td class='ee126' sheetid="1" rowid="10" colid="5"><div style="height:14pt;overflow:hidden"></div></td>
+<td class='ee109' sheetid="1" rowid="10" colid="6"><div style="height:14pt;overflow:hidden"></div></td>
+<td class='ee109' sheetid="1" rowid="10" colid="7"><div style="height:14pt;overflow:hidden"></div></td>
+</tr>
+</table>
+</div>
+
+</div>
+<div class="wizardbuttons mystyles" />
+<table border='0' align="left"><tr><td align="center">
+<div style="background:url('support/btn-bg_boxed.png'); repeat-x left top;border-right:1px solid #C3C4C3;border-left:1px solid #C3C4C3;height:40px;">
+<table border='0' width='98%'><tr style="height:38px;">
+<td style="width:19%" valign="middle" align="left"><input class='buttonsBlue' type='button' value='Calculate' name='xl_update_bottom' id='btnUpdate_buttom' tabindex='7' onclick="recalc_onclick('');"  /></td>
+<td style="width:19%" align="left"><input class='buttonsBlue' type='button' value='Reset' name='btnReset_buttom' id='btnReset_buttom' onclick="reset_onclick('');" tabindex='8'  /></td>
+<td style="width:19%">&nbsp;</td>
+</tr></table></div></td>
+<td style='width: 100%;text-align:right;'>
+<span style='margin-left:20px;'>
+</td></tr></table>
+
+                        </script>
+
+
+<script type="text/javascript">
+</script>
+</body>
+<script language="JavaScript" type="text/javascript" src="support/internalfunctions.js"></script>
+<script language='javascript' type='text/javascript'>function setCookieValues(){var idvalue,idinput,elemtype,i,elemlength=document.formc.elements.length,localData,pageName,expDate;pageName=GetPageName();expDate=CookieExpiryDate(new Date,3);for(i=0;i<elemlength;i++){elemtype=document.formc.elements[i].type;if(elemtype=="text"||elemtype=="textarea"||elemtype=="hidden"){if(document.formc.elements[i].readOnly==false){idinput=document.formc.elements[i].id;if(idinput.substring(0,3)!="xl_"){idvalue=document.formc.elements[i].value;YAHOO.util.Cookie.set(pageName+"_"+idinput,idvalue,{expires:expDate});localData+=pageName+"_"+idinput+","+idvalue+","+expDate+","+window.location+",No"}}}else if(elemtype=="select-one"){idvalue=document.formc.elements[i].selectedIndex;idinput=document.formc.elements[i].id;YAHOO.util.Cookie.set(pageName+"_"+idinput,idvalue,{expires:expDate});localData+=pageName+"_"+idinput+","+idvalue+","+expDate+","+window.location+",No"}else if(elemtype=="checkbox"||elemtype=="radio"){idvalue=document.formc.elements[i].checked?"yes":"no";idinput=document.formc.elements[i].id;if(idinput!="showagain"){YAHOO.util.Cookie.set(pageName+"_"+idinput,idvalue,{expires:expDate});localData+=pageName+"_"+idinput+","+idvalue+","+expDate+","+window.location+",No"}}if(localData.length>4096)break}}function getCookieValues(){for(var idinput,idvalue,elemtype,firstload="false",elemlength=document.formc.elements.length,i=0;i<elemlength;i++){elemtype=document.formc.elements[i].type;if(elemtype=="text"||elemtype=="textarea"||elemtype=="hidden"){if(document.formc.elements[i].readOnly==false){idinput=document.formc.elements[i].id;idvalue=YAHOO.util.Cookie.get(GetPageName()+"_"+idinput);if(idvalue==null){firstload="true";break}if(idvalue==GetPageName()+"_"+idinput)idvalue="";document.formc.elements[i].value=idvalue}}else if(elemtype=="select-one"){idinput=document.formc.elements[i].id;idvalue=YAHOO.util.Cookie.get(GetPageName()+"_"+idinput);document.formc.elements[i].selectedIndex=idvalue}else if(elemtype=="checkbox"||elemtype=="radio"){idinput=document.formc.elements[i].id;idvalue=YAHOO.util.Cookie.get(GetPageName()+"_"+idinput);if(idvalue=="yes")document.formc.elements[i].checked=true;else document.formc.elements[i].checked=false}}if(firstload=="true"){initial_update();eequerystring()}else{var querystring=document.location.search;if(querystring.length>0){variables=querystring.substring(1).split("&");variables.toString().toUpperCase().search("FORCE=TRUE")!=-1&&eequerystring()}}}</script><script language='javascript' type='text/javascript'>var eecm1=[];function calc(data){var c1B6=data["xlew_1_6_2"],c1B5=data["xlew_1_5_2"],c1B4=data["xlew_1_4_2"],c1B3=data["xlew_1_3_2"],c1B2=data["xlew_1_2_2"],c1B1=data["xlew_1_1_2"],tmp1=c1B2*1.33,sumcnt2_sum=0+tmp1,sumcnt2_cnt=1,c1D2=sumgeneral(0,sumcnt2_sum,sumcnt2_cnt,eecm1),tmp3=c1D2/c1B1,sumcnt4_sum=0+tmp3,sumcnt4_cnt=1,c1E2=sumgeneral(0,sumcnt4_sum,sumcnt4_cnt,eecm1),tmp5=c1B3/25,sumcnt6_sum=0+tmp5,sumcnt6_cnt=1,c1D3=sumgeneral(0,sumcnt6_sum,sumcnt6_cnt,eecm1)*.83+v2n(c1B4)*4.65,tmp7=c1B5/10,sumcnt8_sum=0+tmp7,sumcnt8_cnt=1,c1D5=sumgeneral(0,sumcnt8_sum,sumcnt8_cnt,eecm1)*.83,tmp9=c1B6/10,sumcnt10_sum=0+tmp9,sumcnt10_cnt=1,c1D6=sumgeneral(0,sumcnt10_sum,sumcnt10_cnt,eecm1)*.83+2.68,tmp11=c1E2+c1D3+c1D6,sumcnt12_sum=0+tmp11,sumcnt12_cnt=1,c1E8=sumgeneral(0,sumcnt12_sum,sumcnt12_cnt,eecm1),tmp13=c1E8*c1B1,sumcnt14_sum=0+tmp13,sumcnt14_cnt=1,c1F8=sumgeneral(0,sumcnt14_sum,sumcnt14_cnt,eecm1),tmp17=c1E2+c1D3+c1D5,sumcnt18_sum=0+tmp17,sumcnt18_cnt=1,c1E9=sumgeneral(0,sumcnt18_sum,sumcnt18_cnt,eecm1),tmp19=c1E9*c1B1,sumcnt20_sum=0+tmp19,sumcnt20_cnt=1,c1F9=sumgeneral(0,sumcnt20_sum,sumcnt20_cnt,eecm1),tmp15=c1F8*1.5,sumcnt16_sum=0+tmp15,sumcnt16_cnt=1,c1G8=sumgeneral(0,sumcnt16_sum,sumcnt16_cnt,eecm1),tmp21=c1F9*1.5,sumcnt22_sum=0+tmp21,sumcnt22_cnt=1,c1G9=sumgeneral(0,sumcnt22_sum,sumcnt22_cnt,eecm1),c1B7=c1G8>1e3?0:150,c1B8=c1G8<1e3?c1G8+150:c1G8,c1B9=c1G9<1e3?c1G9+150:c1G9;data["xlew_1_9_7"]=c1G9;data["xlew_1_9_6"]=c1F9;data["xlew_1_9_5"]=c1E9;data["xlew_1_9_2"]=c1B9;data["xlew_1_8_7"]=c1G8;data["xlew_1_8_6"]=c1F8;data["xlew_1_8_5"]=c1E8;data["xlew_1_8_2"]=c1B8;data["xlew_1_7_2"]=c1B7;data["xlew_1_6_4"]=c1D6;data["xlew_1_5_4"]=c1D5;data["xlew_1_3_4"]=c1D3;data["xlew_1_2_5"]=c1E2;data["xlew_1_2_4"]=c1D2}</script>
+<script language='javascript' type='text/javascript'>var eeisus=0,eetrue="TRUE",eefalse="FALSE",eedec=".",eeth=",",eedecreg=new RegExp("\\.","g"),eethreg=new RegExp(",","g"),eecurrencyreg=new RegExp("£","g"),eepercentreg=new RegExp("%","g"),fmtdaynamesshort=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],fmtdaynameslong=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],fmtmonthnamesshort=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],fmtmonthnameslong=["January","February","March","April","May","June","July","August","September","October","November","December"],fmtstrings=["£"],fmtdate1=[32,25,2],fmtdate2=[32,25,3],fmtdate3=[32,25,0],jsonLocal='{"eeisus":0,"eetrue":"TRUE","eefalse":"FALSE","eedec":".","eeth":",","eedecreg":["\\\\.","g"],"eethreg":[",","g"],"eecurrencyreg":["£","g"],"eepercentreg":["%","g"],"fmtdaynamesshort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"fmtdaynameslong":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"fmtmonthnamesshort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"fmtmonthnameslong":["January","February","March","April","May","June","July","August","September","October","November","December"],"fmtstrings":["£"]}'</script>
+<script language='javascript' type='text/javascript'>var co={};function recalc_onclick(){if(true){co["xlew_1_1_2"]=eeparseFloat(document.getElementById("xlew_1_1_2").value);co["xlew_1_2_2"]=eeparseFloat(document.getElementById("xlew_1_2_2").value);co["xlew_1_3_2"]=eeparseFloat(document.getElementById("xlew_1_3_2").value);co["xlew_1_4_2"]=eeparseFloatV(eegetdropdownvalue(document.formc.elements["xlew_1_4_2"]));co["xlew_1_5_2"]=eeparseFloat(document.getElementById("xlew_1_5_2").value);co["xlew_1_6_2"]=eeparseFloat(document.getElementById("xlew_1_6_2").value);calc(co);document.getElementById("xlew_1_2_4").value=eedisplayFloatND(co["xlew_1_2_4"],3);document.getElementById("xlew_1_2_5").value=eedisplayFloatND(co["xlew_1_2_5"],3);document.getElementById("xlew_1_3_4").value=eedisplayFloatND(co["xlew_1_3_4"],3);document.getElementById("xlew_1_5_4").value=eedisplayFloatND(co["xlew_1_5_4"],3);document.getElementById("xlew_1_6_4").value=eedisplayFloatND(co["xlew_1_6_4"],3);document.getElementById("xlew_1_7_2").value=eedatefmt(fmtdate3,co["xlew_1_7_2"]);document.getElementById("xlew_1_8_2").value=eedatefmt(fmtdate1,co["xlew_1_8_2"]);document.getElementById("xlew_1_8_5").value=eedisplayFloatND(co["xlew_1_8_5"],3);document.getElementById("xlew_1_8_6").value=eedisplayFloatND(co["xlew_1_8_6"],3);document.getElementById("xlew_1_8_7").value=eedatefmt(fmtdate1,co["xlew_1_8_7"]);document.getElementById("xlew_1_9_2").value=eedatefmt(fmtdate1,co["xlew_1_9_2"]);document.getElementById("xlew_1_9_5").value=eedisplayFloatND(co["xlew_1_9_5"],3);document.getElementById("xlew_1_9_6").value=eedisplayFloatND(co["xlew_1_9_6"],3);document.getElementById("xlew_1_9_7").value=eedatefmt(fmtdate2,co["xlew_1_9_7"])}}</script>
+<!-- library -->
+<script language='javascript' type='text/javascript'>function eegetdropdownvalue(ctl){return ctl.selectedIndex>=0&&ctl[ctl.selectedIndex]?ctl[ctl.selectedIndex].value:0}function myIsNaN(x){return isNaN(x)||typeof x=="number"&&!isFinite(x)}function mod(n,d){return n-d*Math.floor(n/d)}function round(n,nd){if(isFinite(n)&&isFinite(nd)){var sign_n=n<0?-1:1,abs_n=Math.abs(n),factor=Math.pow(10,nd);return sign_n*Math.round(abs_n*factor)/factor}else return NaN}function sum2(arr,rt,rb){for(var sum=0,ii=rt;ii<=rb;ii++)sum+=arr[ii];return sum}function sum3(arr,rt,ct,rb,cb){for(var sum=0,ii=rt;ii<=rb;ii++)for(var jj=ct;jj<=cb;jj++)sum+=arr[ii][jj];return sum}function sumgeneral(cnt,vsum,vcnt,x){for(var sum=vsum,ii=0;ii<x.length;ii++)sum+=sum3(x[ii][0],x[ii][1],x[ii][2],x[ii][3],x[ii][4]);return sum}function s2n(str){str=String(str).replace(eedecreg,".");str=str.replace(eethreg,"");str=str.replace(eecurrencyreg,"");var res=parseFloat(str);if(myIsNaN(res))res=0;if(str.search(eepercentreg)>=0)res=res/100;return res}function v2n(v){switch(typeof v){case "number":return v;case "string":return s2n(v);case "boolean":return v?1:0;case "object":if(v.constructor==Number)return v;if(v.constructor==String)return s2n(v);if(v.constructor==Boolean)return v?1:0;return Number.NaN;default:return Number.NaN}}function eeparseFloat(str){str=String(str).replace(eedecreg,".");var res=parseFloat(str);if(isNaN(res))return 0;else return res}var near0RegExp=new RegExp("[.](.*0000000|.*9999999)");function eedisplayFloat(x){if(myIsNaN(x))return Number.NaN;else{var str=String(x);if(near0RegExp.test(str)){x=round(x,8);str=String(x)}return str.replace(/\./g,eedec)}}function eedisplayScientific(x,nd){if(myIsNaN(x))return Number.NaN;else{var str=String(x.toExponential(nd));return str.replace(/\./g,eedec)}}function eedisplayFloatND(x,nd){if(myIsNaN(x))return Number.NaN;else{var res=round(x,nd);if(nd>0){var str=String(res);if(str.indexOf("e")!=-1)return str;if(str.indexOf("E")!=-1)return str;var parts=str.split(".");if(parts.length<2){var decimals="00000000000000".substring(0,nd);return parts[0].toString()+eedec+decimals}else{var decimals=(parts[1].toString()+"00000000000000").substring(0,nd);return parts[0].toString()+eedec+decimals}}else return res}}function eedisplayPercent(x){if(myIsNaN(x))return Number.NaN;else return eedisplayFloat(x*100)+"%"}function eedisplayPercentND(x,nd){if(myIsNaN(x))return Number.NaN;else return eedisplayFloatND(x*100,nd)+"%"}function eedisplayFloatNDTh(x,nd){if(myIsNaN(x))return Number.NaN;else{var res=round(x,nd);if(nd>0){var str=String(res);if(str.indexOf("e")!=-1)return str;if(str.indexOf("E")!=-1)return str;var parts=str.split("."),res2=eeinsertThousand(parts[0].toString());if(parts.length<2){var decimals="00000000000000".substring(0,nd);return res2+eedec+decimals}else{var decimals=(parts[1].toString()+"00000000000000").substring(0,nd);return res2+eedec+decimals}}else return eeinsertThousand(res.toString())}}function eedisplayPercentNDTh(x,nd){if(myIsNaN(x))return Number.NaN;else return eedisplayFloatNDTh(x*100,nd)+"%"}var eeparseFloatVreg=new RegExp("^ *-?[0-9.]+ *$");function eeparseFloatV(str){if(str=="")return str;str=String(str).replace(eedecreg,".");if(!eeparseFloatVreg.test(str))return str;var res=parseFloat(str);if(isNaN(res))return str;else return res}function eeinsertThousand(whole){if(whole==""||whole.indexOf("e")>=0)return whole;else{var minus_sign="";if(whole.charAt(0)=="-"){minus_sign="-";whole=whole.substring(1)}for(var res="",str_length=whole.length-1,ii=0;ii<=str_length;ii++){if(ii>0&&ii%3==0)res=eeth+res;res=whole.charAt(str_length-ii)+res}return minus_sign+res}}function eedatefmt(fmt,x){if(!isFinite(x))return Number.NaN;for(var padding=0,tmp=0,res="",len=fmt.length,ii=0;ii<len;ii++)if(fmt[ii]>31)res+=fmtstrings[fmt[ii]-32];else switch(fmt[ii]){case 2:res+=eemonth(x);break;case 3:tmp=eemonth(x);if(tmp<10)res+="0";res+=tmp;break;case 4:res+=fmtmonthnamesshort[eemonth(x)-1];break;case 5:res+=fmtmonthnameslong[eemonth(x)-1];break;case 6:res+=eeday(x);break;case 7:tmp=eeday(x);if(tmp<10)res+="0";res+=tmp;break;case 8:res+=fmtdaynamesshort[weekday(x,1)-1];break;case 9:res+=fmtdaynameslong[weekday(x,1)-1];break;case 10:tmp=year(x)%100;if(tmp<10)res+="0";res+=tmp;break;case 11:res+=year(x);break;case 12:res+=hour(x);break;case 13:tmp=hour(x);if(tmp<10)res+="0";res+=tmp;break;case 14:tmp=hour(x)%12;if(tmp==0)res+="12";else res+=tmp%12;break;case 15:tmp=hour(x)%12;if(tmp==0)res+="12";else{if(tmp<10)res+="0";res+=tmp}break;case 16:res+=minute(x);break;case 17:tmp=minute(x);if(tmp<10)res+="0";res+=tmp;break;case 18:res+=second(x);break;case 19:tmp=second(x);if(tmp<10)res+="0";res+=tmp;break;case 21:case 22:if(hour(x)<12)res+="AM";else res+="PM";break;case 23:res+=eedisplayFloat(x);break;case 24:tmp=fmt[++ii];res+=eedisplayFloatND(x,tmp);break;case 25:tmp=fmt[++ii];res+=eedisplayFloatNDTh(x,tmp);break;case 26:res+=eedisplayPercent(x);break;case 27:tmp=fmt[++ii];res+=eedisplayPercentND(x,tmp);break;case 28:tmp=fmt[++ii];res+=eedisplayPercentNDTh(x,tmp);break;case 29:tmp=fmt[++ii];res+=eedisplayScientific(x,tmp);break;case 30:padding=fmt[++ii];tmp=hour(x)+Math.floor(x)*24;tmp=tmp.toString();if(tmp.length<padding)res+="00000000000000".substring(0,padding-tmp.length);res+=tmp}return res}function eeisstring(v){switch(typeof v){case "string":return true;case "object":return v.constructor==String;default:return false}}function leap_gregorian(year){return year%4==0&&!(year%100==0&&year%400!=0)}var GREGORIAN_EPOCH=1721425;function gregorian_to_jd(year,month,day){return GREGORIAN_EPOCH-0+365*(year-1)+Math.floor((year-1)/4)+-Math.floor((year-1)/100)+Math.floor((year-1)/400)+Math.floor((367*month-362)/12+(month<=2?0:leap_gregorian(year)?-1:-2)+day)}function jd_to_gregorian(jd){var wjd,depoch,quadricent,dqc,cent,dcent,quad,dquad,yindex,year,yearday,leapadj;wjd=Math.floor(jd);depoch=wjd-GREGORIAN_EPOCH-1;quadricent=Math.floor(depoch/146097);dqc=mod(depoch,146097);cent=Math.floor(dqc/36524);dcent=mod(dqc,36524);quad=Math.floor(dcent/1461);dquad=mod(dcent,1461);yindex=Math.floor(dquad/365);year=quadricent*400+cent*100+quad*4+yindex;if(!(cent==4||yindex==4))year++;yearday=wjd-gregorian_to_jd(year,1,1);leapadj=wjd<gregorian_to_jd(year,3,1)?0:leap_gregorian(year)?1:2;var month=Math.floor(((yearday+leapadj)*12+373)/367),day=wjd-gregorian_to_jd(year,month,1)+1;return [year,month,day]}function eeday(serial_number){if(!isFinite(serial_number))return Number.NaN;if(serial_number<1)return 0;if(serial_number>60)serial_number--;var res=jd_to_gregorian(serial_number+2415020);return res[2]}function hour(serial_number){if(!isFinite(serial_number))return Number.NaN;var res=Math.floor((serial_number-Math.floor(serial_number))*86400+.5);return Math.floor(res/3600)}function minute(serial_number){if(!isFinite(serial_number))return Number.NaN;var res=Math.floor((serial_number-Math.floor(serial_number))*86400+.5);return Math.floor(res/60)%60}function eemonth(serial_number){if(!isFinite(serial_number))return Number.NaN;if(serial_number<1)return 1;if(serial_number>60)serial_number--;var res=jd_to_gregorian(serial_number+2415020);return res[1]}function second(serial_number){if(!isFinite(serial_number))return Number.NaN;var res=Math.floor((serial_number-Math.floor(serial_number))*86400+.5);return res%60}function weekday(serial_number,return_type){if(!isFinite(return_type)||!isFinite(serial_number))return Number.NaN;if(return_type<1||return_type>3)return Number.NaN;var res=Math.floor(serial_number+6)%7;switch(Math.floor(return_type)){case 1:return res+1;case 2:return (res+6)%7+1;case 3:return (res+6)%7}return "hej"}function year(serial_number){if(!isFinite(serial_number))return Number.NaN;if(serial_number<1)return 1900;if(serial_number>60)serial_number--;var res=jd_to_gregorian(serial_number+2415020);return res[0]}</script>
+<script language='javascript' type='text/javascript'>function postcode(){}</script>
+<script language='javascript' type='text/javascript'>var reqlist=["panel1^xlew_1_4_2"];(function(){var tabView=new YAHOO.widget.TabView("demo");YAHOO.log("The example has finished loading, as you interact with it, you will see log messages appearing here.","info","example")})();var submitted=false;function check_submit(objcaptcha){var pagevalues,fadediv,lightalertdiv;if(checkrequired(reqlist,"nopanel")===true){pagevalues=getPageSize();fadediv=document.getElementById("fadealert");lightalertdiv=document.getElementById("lightalert");fadediv.style.height=pagevalues[1];fadediv.style.display="block";lightalert.style.top=pagevalues[3]/2-125/2+pagevalues[4];lightalert.style.left=pagevalues[0]/2-320/2;lightalert.style.display="block";document.getElementById("btnCaptchaalert").focus()}else if(objcaptcha=="nocaptcha")if(submitted){alert("You have already submitted the form.  Please be patient.");submitted=false;return false}else{recalc_onclick("");submitted=true;document.formc.submit();return true}else{recalc_onclick("");pagevalues=getPageSize();fadediv=document.getElementById("fade");lightalertdiv=document.getElementById("light");fadediv.style.height=pagevalues[1];fadediv.style.display="block";lightalertdiv.style.top=pagevalues[3]/2-200/2+pagevalues[4];lightalertdiv.style.left=pagevalues[0]/2-320/2;lightalertdiv.style.display="block";GenerateCaptID();document.getElementById("txtcaptcha").value="";document.getElementById("txtcaptcha").focus()}}YAHOO.example.init=function(){function onButtonClickReset(){reset_onclick("")}function onButtonClickUpdate(){recalc_onclick("")}function onButtonClickPrint(){window.print()}function onButtonClickSubmit(){setCookieValues();check_submit()}var oPushButton1,oPushButton2,oPushButton3,oPushButton4,oPushButton5,oPushButton6,oPushButton7,oPushButton8;YAHOO.util.Event.onContentReady("submitbuttonsfrommarkup",function(){oPushButton1=new YAHOO.widget.Button("btnReset");oPushButton1.on("click",onButtonClickReset);oPushButton2=new YAHOO.widget.Button("btnUpdate");oPushButton2.on("click",onButtonClickUpdate);oPushButton3=new YAHOO.widget.Button("btnPrint");oPushButton3.on("click",onButtonClickPrint);oPushButton5=new YAHOO.widget.Button("btnPrintAll");oPushButton5.on("click",onButtonClickPrint);oPushButton4=new YAHOO.widget.Button("btnSubmit");oPushButton4.on("click",onButtonClickSubmit)});YAHOO.util.Event.onContentReady("divbottom",function(){oPushButton5=new YAHOO.widget.Button("btnReset_buttom");oPushButton5.on("click",onButtonClickReset);oPushButton6=new YAHOO.widget.Button("btnUpdate_buttom");oPushButton6.on("click",onButtonClickUpdate);oPushButton7=new YAHOO.widget.Button("btnPrint_buttom");oPushButton7.on("click",onButtonClickPrint);oPushButton9=new YAHOO.widget.Button("btnPrintAll_buttom");oPushButton9.on("click",onButtonClickPrint);oPushButton8=new YAHOO.widget.Button("btnSubmit_buttom");oPushButton8.on("click",onButtonClickSubmit)})}();function reset_onclick(){document.formc.reset();postcode();recalc_onclick("");ResetRatings()}function eequerystring(){var variable,key,value,ii,querystring,variables;querystring=document.location.search;if(querystring.length>0){variables=querystring.substring(1).split("&");for(ii=0;ii<variables.length;ii++){variable=variables[ii].split("=");key=unescape(variable[0]);value=unescape(variable[1]);if(document.formc[key]!=null)document.formc[key].value=value}}}function initial_update(){postcode("");eequerystring();recalc_onclick("")}</script><script type="text/javascript" language="javascript">
+function showPanel(){var id=parseInt(document.getElementById("panelidz").value)-1;jQuery(".yui-nav li").each(function(i){jQuery(".yui-nav li").eq(i).removeClass("selected");});jQuery(".yui-nav li").eq(id).addClass("selected");var myTabs = new YAHOO.widget.TabView("demo");myTabs.set('activeIndex',id);}</script>
+<script language="javascript" type="text/javascript">
+function setValueofBtn()
+{
+
+}</script>
+
+<script type="text/javascript" language="javascript">
+function ResetRatings(){
+}
+function SetSliders(){
+}</script>
+
+<script language='javascript' type='text/javascript'>try{var myDialog,handleSubmit;myDialog=new YAHOO.widget.Dialog("myDialog",{width:"330px",fixedcenter:true,draggable:false,close:false});myDialog.cfg.queueProperty("postmethod","form");handleSubmit=function(){if(document.getElementById("showagain")!=null)document.getElementById("showagain").checked==true&&YAHOO.util.Cookie.set(GetPageName()+"_showdialogagain","no",{expires:CookieExpiryDate(new Date,3)});myDialog.hide()};function onButtonsReady(){var oOKButton;oOKButton=new YAHOO.widget.Button("ok-button");function onButtonClick(){if(document.getElementById("showagain")!=null)document.getElementById("showagain").checked==true&&YAHOO.util.Cookie.set(GetPageName()+"_showdialogagain","no",{expires:CookieExpiryDate(new Date,3)});myDialog.hide()}oOKButton.addListener("click",onButtonClick)}YAHOO.util.Event.onContentReady("buttons",onButtonsReady);myDialog.render();var cookievalue=YAHOO.util.Cookie.get(GetPageName()+"_showdialogagain");if(cookievalue==null||cookievalue!="no"){document.getElementById("showagain")!=null&&document.getElementById("showagain").focus();myDialog.show()}else myDialog.hide()}catch(err){}function changestylesheet(sheets){recalc_onclick("");if(sheets=="allsheet")document.getElementById("default").href="support/print_friendly.css";else document.getElementById("default").href="";window.print()}</script></html>
+

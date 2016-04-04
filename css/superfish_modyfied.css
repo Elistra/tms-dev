@@ -1,0 +1,224 @@
+/*** ESSENTIAL STYLES ***/
+
+/* background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);  
+	background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%); 
+	background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%); 
+	box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+	
+	*/
+.sf-menu, .sf-menu * {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+font-family: sans-serif,'Open Sans','Lato', 'Roboto';
+	font-style: normal;
+	font-size: 1em;
+	font-weight: 100;
+	box-shadow: 0 -2px 0 rgba(17, 51, 170, 0.83);
+		
+}
+.sf-menu li {
+	position: relative;
+		width:148px; 
+		
+	 /* fallback */
+  background-color: #BDD2FF;
+
+
+ /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f8faff), to(#BDD2FF));
+
+  /* Safari 5.1, Chrome 10+ */
+  background: -webkit-linear-gradient(top, #BDD2FF, #f8faff);
+
+  /* Firefox 3.6+ */
+  background: -moz-linear-gradient(top, #BDD2FF, #f8faff);
+
+  /* IE 10 */
+  background: -ms-linear-gradient(top, #BDD2FF, #f8faff);
+
+  /* Opera 11.10+ */
+  background: -o-linear-gradient(top, #BDD2FF, #f8faff);
+}
+.sf-menu ul {
+	position: absolute;
+	display: none;
+	top: 100%;
+	left: 0;
+	z-index: 99;
+}
+.sf-menu > li {
+	float: left;
+}
+.sf-menu li:hover > ul,
+.sf-menu li.sfHover > ul {
+	display: block;
+}
+
+.sf-menu a {
+	display: block;
+	position: relative;
+}
+.sf-menu ul ul {
+	top: 0;
+	left: 100%;
+}
+
+
+/*** DEMO SKIN ***/
+.sf-menu {
+	float: left;
+	
+}
+.sf-menu ul {
+	box-shadow: 2px 2px 6px rgba(0,0,0,.2);
+	min-width: 12em; /* allow long menu items to determine submenu width */
+	*width: 12em; /* no auto sub width for IE7, see white-space comment below */
+}
+.sf-menu a {
+	border-left: 1px solid #fff;
+	border-top: 1px solid #dFeEFF; /* fallback colour must use full shorthand */
+	border-top: 1px solid rgba(255,255,255,.5);
+		
+	padding: .75em 1em;
+	text-decoration: none;
+	zoom: 1; /* IE7 */
+}
+.sf-menu a {
+	color: #2A3481;
+    /* fallback */
+    background-color: #BDD2FF;
+
+
+    /* Safari 4-5, Chrome 1-9 */
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f8faff), to(#BDD2FF));
+
+    /* Safari 5.1, Chrome 10+ */
+    background: -webkit-linear-gradient(top, #BDD2FF, #f8faff);
+
+    /* Firefox 3.6+ */
+    background: -moz-linear-gradient(top, #BDD2FF, #f8faff);
+
+    /* IE 10 */
+    background: -ms-linear-gradient(top, #BDD2FF, #f8faff);
+
+    /* Opera 11.10+ */
+    background: -o-linear-gradient(top, #BDD2FF, #f8faff);
+}
+
+.homeMenu {
+border-top-left-radius: 15px;
+
+
+}
+
+.contactusMenu {
+	
+	border-top-right-radius: 15px;
+}
+.sf-menu li {
+	
+	 /* fallback */
+  background-color: #BDD2FF;
+
+
+  /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f8faff), to(#BDD2FF));
+
+  /* Safari 5.1, Chrome 10+ */
+  background: -webkit-linear-gradient(top, #BDD2FF, #f8faff);
+
+  /* Firefox 3.6+ */
+  background: -moz-linear-gradient(top, #BDD2FF, #f8faff);
+
+  /* IE 10 */
+  background: -ms-linear-gradient(top, #BDD2FF, #f8faff);
+
+  /* Opera 11.10+ */
+  background: -o-linear-gradient(top, #BDD2FF, #f8faff);
+
+
+	white-space: nowrap; /* no need for Supersubs plugin */
+	*white-space: normal; /* ...unless you support IE7 (let it wrap) */
+	-webkit-transition: background .2s;
+	transition: background .2s;
+}
+.sf-menu ul li {
+	width: 192px;
+	
+	 /* fallback */
+  background-color: #BDD2FF;
+
+
+ /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f8faff), to(#BDD2FF));
+
+  /* Safari 5.1, Chrome 10+ */
+  background: -webkit-linear-gradient(top, #BDD2FF, #f8faff);
+
+  /* Firefox 3.6+ */
+  background: -moz-linear-gradient(top, #BDD2FF, #f8faff);
+
+  /* IE 10 */
+  background: -ms-linear-gradient(top, #BDD2FF, #f8faff);
+
+  /* Opera 11.10+ */
+  background: -o-linear-gradient(top, #BDD2FF, #f8faff);
+  
+  opacity: 0.96;
+  
+  
+  
+}
+.sf-menu ul ul li {
+	
+
+    /* fallback */
+    background-color: #BDD2FF;
+
+
+    /* Safari 4-5, Chrome 1-9 */
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f8faff), to(#BDD2FF));
+
+    /* Safari 5.1, Chrome 10+ */
+    background: -webkit-linear-gradient(top, #BDD2FF, #f8faff);
+
+    /* Firefox 3.6+ */
+    background: -moz-linear-gradient(top, #BDD2FF, #f8faff);
+
+    /* IE 10 */
+    background: -ms-linear-gradient(top, #BDD2FF, #f8faff);
+
+    /* Opera 11.10+ */
+    background: -o-linear-gradient(top, #BDD2FF, #f8faff);
+
+
+    white-space: nowrap; /* no need for Supersubs plugin */
+    *white-space: normal; /* ...unless you support IE7 (let it wrap) */
+    -webkit-transition: background .2s;
+    transition: background .2s;
+
+}
+.sf-menu li:hover,
+.sf-menu li a:hover {
+	background: #CFDEFF;
+	/* only transition out, not in */
+	-webkit-transition: none;
+	transition: none;
+	color: #0b41f5;
+
+}
+
+.sf-menu li a:active {
+color: #0b41f5;
+
+}
+
+.sf-menu li a.current {
+	color: #0b41f5;
+		background: #CFDEFF;
+	/* only transition out, not in */
+	-webkit-transition: none;
+	transition: none;
+}
+

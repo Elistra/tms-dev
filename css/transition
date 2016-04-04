@@ -1,0 +1,28 @@
+.tms_van img {
+    transition: all 0.3s ease-in-out;
+}
+.tms_van .mask {
+    background-color: rgba(146,96,91,0.3);
+    transform: translateX(-300px);
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+}
+
+.tms_van:hover .mask {
+    transform: translateX(0px);
+}
+.tms_van:hover img {
+    transform: translateX(300px);
+    transition-delay: 0.1s;
+}
+
+
+<div class="tms_van">
+<img alt="TMS Van" src="images/tms_van1.jpg" class="tms_van">
+
+<span class="figcaption" style="margin-left:10px; width: 329px; bottom: 46px;">Free local deliveries</span>
+                                                                                                      <div class="mask">
+<img alt="TMS Van" src="images/tms_free_delivery.jpg">
+
+</div>
+  </div>
